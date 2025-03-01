@@ -1,0 +1,642 @@
+body {
+    background-color: #121212;
+    font-family: "Poppins", sans-serif;
+}
+
+/* header */
+header {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: #121212;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin: 0 1rem;
+	color: white;
+    font-weight: 600;
+	text-decoration: none;
+    font-size: 40px;
+}
+
+nav {
+	margin-left: auto; 
+}
+
+nav .link {
+	margin: 0 1rem;
+	color: white;
+    font-weight: 600;
+	text-decoration: none;
+    font-size: 26px;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.login {
+    background-color: #4F75FF;
+    border-radius: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+
+header div,
+nav {
+	display: flex;
+	align-items: right;
+}
+
+/* hero banner */
+.hero-banner {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.hero-banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hero-banner .subtitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.hero-banner .get-started-button {
+    background-color: #4F75FF;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    width: 390px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* features section */
+.features-section h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.features-section p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.features-card {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    color: white; 
+    width: 100%; 
+    margin: 20px auto; 
+    cursor: pointer;
+}
+
+.features-card .card-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4F75FF;
+}
+
+.features-card .card-description {
+    font-size: 20px;
+}
+
+/* login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    cursor: pointer;
+}
+
+.login-section h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #4F75FF;
+    font-weight: 700;
+}
+
+.login-section p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.login-section .text-box {
+    padding: 10px;
+    border-radius: 5px;
+    width: 440px;
+    color: black;
+}
+
+.login-section .error-text {
+    font-size: 16px;
+    color: #4F75FF;
+    margin-top: 5px;
+}
+
+.login-section .login-button {
+    background-color: #4F75FF;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    width: 440px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.login-section .signup {
+    color: #4F75FF;
+}
+
+/* profile page */
+.profile-section {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin: 100px;
+}
+
+.profile-section .profile-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.profile-section .profile-text {
+    padding: 10px;
+    border-radius: 5px;
+    width: 480px;
+    color: black;
+    background-color: rgb(169, 168, 168);
+}
+
+.button-container {
+    display: flex;            
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;               
+}
+  
+.cancel-profile,
+.save-profile {
+    padding: 10px 20px;    
+    cursor: pointer;         
+    border: none;           
+    border-radius: 5px;   
+    font-size: 20px;
+    font-weight: 700;  
+}
+
+.cancel-profile {
+    background-color: black;
+    color: white;              
+}
+  
+.save-profile {
+    background-color: #4F75FF; 
+    color: white;     
+    margin-left: 20px;         
+}
+
+.profile-section .edit-profile {
+    background-color: #4F75FF;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10px;
+}
+
+/* sidebar */
+.sidebar {
+    background-color: #4F75FF;
+}
+
+.sidebar-main h1 {
+    font-size: 50px;
+}
+
+.sidebar-main .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    cursor: pointer;
+}
+
+/* dashboard */
+.dashboard-section .title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.dashboard-section .box {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0)), rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.dashboard-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.add-task-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-new-task-btn {
+    padding: 10px 20px;
+    background-color: #4F75FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.add-task-button {
+    background-color: #4F75FF;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.cancel-task-button {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.add-task-title {
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+
+.enter-title {
+    color: black;
+    font-size: 20px;
+}
+
+.add-textBox {
+    background-color: rgb(189, 189, 189);
+    padding: 15px;
+    width: 800px;
+    border-radius: 10px;
+    color: black;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.task-container {
+    border-radius: 10px;
+    color: black;
+}
+
+.task-radio-btn {
+    display: none; 
+}
+
+.custom-radio {
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #4c51bf; 
+    display: inline-block; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    position: relative; 
+}
+
+.custom-radio.checked {
+    background-color: #4c51bf; 
+}
+  
+
+.task-delete-btn {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.dashboard-tasks {
+    background-color: white;
+    padding: 14px;
+    border-radius: 10px;
+    color: black;
+}
+
+.progress-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.circle-progress {
+    width: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box ul {
+    max-height: 200px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+}
+  
+.dashboard-tasks {
+    display: flex;
+    align-items: center; 
+}
+
+.get-suggestions-btn {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.suggestions-box {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+  
+/* modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 700px;
+}
+
+/* footer */
+.footer-section {
+    background-color: #4F75FF;
+}
+
+.footer-section .footer-text {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+/* media queries */
+@media (max-width: 480px) {
+    .hero-banner h1 {
+        font-size: 40px;
+    }
+
+    .hero-banner .get-started-button {
+        font-size: 20px;
+        width: 100%; 
+        padding: 12px; 
+    }
+
+    .features-section h1 {
+        font-size: 36px; 
+    }
+
+    .features-section p {
+        font-size: 18px; 
+    }
+
+    .features-card {
+        padding: 15px; 
+        width: 90%; 
+    }
+
+    .features-card .card-title {
+        font-size: 20px; 
+    }
+
+    .features-card .card-description {
+        font-size: 16px; 
+    }
+
+    .login-section {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .login-section h1 {
+        font-size: 32px;
+    }
+
+    .login-section p {
+        font-size: 18px;
+    }
+
+    .login-section .text-box,
+    .login-section .login-button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .login-section .login-button {
+        padding: 10px;
+    }
+
+    .login-section .error-text {
+        font-size: 14px;
+    }
+
+    .footer-section {
+        padding: 15px;
+    }
+
+    .footer-section .footer-text {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: black;
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+        color: white;
+	}
+
+	nav .link {
+		font-size: 1.5rem;
+        color: white;
+	}
+}
